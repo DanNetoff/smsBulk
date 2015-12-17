@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="UCanAccess-3.0">
+    <CLASSES>
+      <root url="file://C:/JavaDoc/UCanAccess-3.0.3-bin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://C:/JavaDoc/UCanAccess-3.0.3-bin" recursive="false" />
+  </library>
+</component>
