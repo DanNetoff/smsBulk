@@ -78,7 +78,7 @@ public class Main {
             }
         }
         */
-/*
+
         SimpleDateFormat sdf = new SimpleDateFormat();
         sdf.applyPattern("dd/MM/yyyy");
         // Date myDate = null;
@@ -90,7 +90,7 @@ public class Main {
 
 
         System.out.println(myList.toString());
-*/
+
 
         
 
