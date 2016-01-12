@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) throws ParseException, SQLException, ClassNotFoundException {
 
 
-        String query = "SELECT * FROM operation WHERE op = ? AND date_op = ?";
+        String query = "SELECT id,op,date_op,sum_op,percent_op,delay_op FROM operation WHERE op = ? AND date_op < ?";
 
         /*
         Map<Integer, Map<String, Object>> map = new LinkedHashMap<>();
@@ -88,8 +88,14 @@ public class Main {
 
         List<Map<String, Object>> myList = DButils.getList(query,1,myDate);
 
+        for(Map<String, Object> mp : myList){
+            for(Entry<String, Object> ee : mp.entrySet()){
+                System.out.print(ee.getKey()+" - ");
+                System.out.println(ee.getValue());
+            }
+            System.out.println("------------");
 
-        System.out.println(myList.toString());
+        }
 
 
         
