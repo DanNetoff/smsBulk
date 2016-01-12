@@ -10,7 +10,7 @@ public class connectionToMDB {
     public static Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName(JDBC_DRIVER);
         Connection connection = null;
-        connection = DriverManager.getConnection(DB_URL,"admin","pep01PER");
+        connection = DriverManager.getConnection(DB_URL,"admin","777");
         return connection;
     }
 }
